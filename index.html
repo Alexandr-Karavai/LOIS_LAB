@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+          <title>Логические основы интеллектуальных систем</title>
+            <link rel="stylesheet" type="text/css" href="./styles/style.css" />
+            <link rel="stylesheet" type="text/css" href="./styles/menuStyle.css" />
+    </head>
+      <script src="./scripts/scriptWorkWithFormula.js"></script>
+      <script src="./scripts/tableTruth.js"></script>
+      <script src="./scripts/scriptOperation.js"></script>
+<body>
+  <ul>
+    <li><a href="index.html">Главная</a></li>
+    <li><a href="grammar.html">Теория</a></li>
+    <li><a href="test.html">Тесты</a></li>
+  </ul>
+    <div class="center">
+        <h3>Найти количество подформул</h3>
+          <input id="inputFormula" type="text" name="inputFormula">
+            <a class="button" id="button" onclick="clickCheckFormula()">Проверить формулу</a>
+          </input>
+        <div class="output" id="output"></div>
+          <h3>Таблица истинности</h3>
+            <table border="1">
+                <tbody id="tbody"></tbody>
+            </table>
+              <div class="outputTypeFormula" id="outputTypeFormula"></div>
+    </div>
+</body>
+</html>
