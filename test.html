@@ -8,35 +8,31 @@
     </head>
       <script src="./scripts/scriptWorkWithFormula.js"></script>
       <script src="./scripts/tableTruth.js"></script>
-      <script src="./scripts/scriptForTest.js"></script>
       <script src="./scripts/scriptOperation.js"></script>
-        <script type="text/javascript">
-        document.addEventListener("DOMContentLoaded", function(event) {
-            newTestSubformula();
-            newTestTypeFormula();
-        });
-        </script>
 <body>
   <ul class="css-menu-3">
     <li><a href="index.html">Главная</a></li>
-    <li><a href="grammar.html">Теория</a></li>
     <li><a href="test.html">Тесты</a></li>
   </ul>
       <div class="center">
         <h3>Сколько подформул в данной формуле?</h3>
-          <div class="output" id="output"></div>
+          <input id="EnterFormula" type="text" name="EnterFormula"><br>
             <input id="formula" type="text" name="formula">
               <a class="button" id="button" onclick="clickCheckTest()">Проверить ответ</a>
+              </input></input>
                 <div class="output" id="outputResult"></div>
         <h3>Являтеся ли формула общезначимой?</h3>
-          <div class="output" id="outputTypeFormula"></div>
-            <h3>Таблица истинности</h3>
-              <table border="1">
-                  <tbody id="tbody"></tbody>
-              </table>
-                <a class="button" id="yes" onclick="clickYes()">Да</a>
-                <a class="button" id="no" onclick="clickNo()">Нет</a>
-                <div class="output" id="outputCheckTypeFormula"></div>
-      </div>
+          <input id="outputTypeFormula" type="text" name="outputTypeFormula"></input>
+            <a class="button" id="check" onclick="newTestTypeFormula()">Проверить формулу</a>
+              <div id="hiddenForm" hidden>
+                <h3>Таблица истинности</h3>
+                  <table border="1">
+                      <tbody id="tbody"></tbody>
+                  </table>
+                    <a class="button" id="yes" onclick="clickYes()">Да</a>
+                    <a class="button" id="no" onclick="clickNo()">Нет</a>
+              </div>
+                  <div class="output" id="outputCheckTypeFormula"></div>
+        </div>
 </body>
 </html>
