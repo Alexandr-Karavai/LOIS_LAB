@@ -12,7 +12,6 @@
 <body>
   <ul>
     <li><a href="index.html">Главная</a></li>
-    <li><a href="grammar.html">Теория</a></li>
     <li><a href="test.html">Тесты</a></li>
   </ul>
     <div class="center">
@@ -21,11 +20,13 @@
             <a class="button" id="button" onclick="clickCheckFormula()">Проверить формулу</a>
           </input>
         <div class="output" id="output"></div>
-          <h3>Таблица истинности</h3>
-            <table border="1">
-                <tbody id="tbody"></tbody>
-            </table>
-              <div class="outputTypeFormula" id="outputTypeFormula"></div>
+          <div id="hiddenForm" hidden>
+            <h3>Таблица истинности</h3>
+              <table border="1">
+                  <tbody id="tbody"></tbody>
+              </table>
+                <div class="outputTypeFormula" id="outputTypeFormula"></div>
+          </div>
     </div>
 </body>
 </html>
