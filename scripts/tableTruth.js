@@ -35,11 +35,14 @@ function getTableTruth(formula){
     var sizeSymbolInFormula = symbolInFormula.length;
     n = Math.pow(2, sizeSymbolInFormula);
     var table = {}
+    countAnswer = 0;
     for (var i = 0; i < n; i++) {
         var currentNumber = numberInBinaryString(i, sizeSymbolInFormula);
         var tempObject = getConstantForSymbol(symbolInFormula, currentNumber);
         tempObject[ANSWER] = getAnswer(formula, tempObject);
         table[i] = tempObject;
+            
+
           if (tempObject[ANSWER] == 1) {
             countAnswer++;
           }
@@ -136,7 +139,6 @@ function findCONJUNCTION(formula) {
 }
 
 function findDISJUNCTION(formula) {
-
     var firstValue = parseInt(formula[1]);
     var secondValue = parseInt(formula[3]);
     if (firstValue||secondValue) {
