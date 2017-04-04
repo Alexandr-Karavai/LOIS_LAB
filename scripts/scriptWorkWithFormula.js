@@ -7,7 +7,7 @@ var tempFormula;
 function searchSubformuls(formula) {
 
         result = formula.match(atomOrConstant, 'g');
-        while (formula != tempFormula ) {
+        while (formula !== tempFormula ) {
           tempFormula = formula;
           result.push(formula.match(unaryOrBinaryComplexFormula, 'g'));
           formula = formula.replace(unaryOrBinaryComplexFormula, replaceFormula);
