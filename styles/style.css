@@ -1,10 +1,19 @@
+ @import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+body {
+
+  font-family: "Lato";
+  margin: auto;
+  background: #E3D9BF;
+}
+
 p {
     margin: auto;
     font-size: 20px;
 }
 
 table {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+    font-family: "Lato";
     font-size: 14px;
     background: #E3D9BF;
     max-width: 70%;
